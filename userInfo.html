@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HUBLOCAL WIFI</title>
+  <link rel="icon" href="img/Ícone Azul.svg">
+  <link rel="stylesheet" href="home.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Roboto+Slab:wght@400;700&family=Roboto:ital,wght@0,400;1,700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <img class="background" src="imagem/BG-HUB.png" />
+
+  <header>
+    <img class="logo" src="imagem/logo-white.png" />
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>Seja bem-vindo ao <span>Inova Varejo 2023!</span></h2>
+      <p>O noso wi-fi é cortesia da HubLocal.</p>
+      <p>Veja como acessar:</p>
+      <ol type="1">
+        <li>Preencha o formulário.</li>
+        <li>Pronto! Você já tem acesso a internet!</li>
+      </ol>
+      <h4>Aproveite o evento!</h4>
+      <form name="login" action="/authorise" method="post">
+        <label for="company">Sua empresa:</label>
+        <input placeholder="Empresa" id="company" type="text" name="company" required />
+        <label for="name">Nome:</label>
+        <input placeholder="Nome" id="name" type="text" name="name" required />
+        <label for="phone">Telefone:</label>
+        <input placeholder="(85) 98765-4321" id="phone" type="phone" name="phone" required />
+        <label for="email">E-mail:</label>
+        <input placeholder="exemplo@email.com" id="email" type="email" name="email" required />
+        <input class="button" id="submit" type="submit" value="Conectar" />
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <a target="_blank" href="https://www.instagram.com/hub.local/">
+      <img src="imagem/SVG_INSTAGRAM.svg" alt="Instagram">
+    </a>
+    <a target="_blank" href="https://hublocal.com.br/">
+      <img src="imagem/SVG_SITE.svg" alt="Site">
+    </a>
+    <a target="_blank" href="https://www.youtube.com/@hublocal">
+      <img src="imagem/SVG_YOUTUBE.svg" alt="YouTube">
+    </a>
+    <a class="linkedin" target="_blank" href="https://www.linkedin.com/company/hublocaloficial/">
+      <img src="imagem/SVG_LINKEDIN.svg" alt="Linkedin">
+    </a>
+  </footer>
+
+  <script>
+    //Change button text on press
+    document.getElementById("submit").onclick = function () {
+      this.value = "Conectando...";
+    };
+  </script>
+</body>
+
+</html>
